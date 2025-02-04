@@ -1,0 +1,280 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style de la barre de navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    padding: 15px 20px;
+  }
+  
+  nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #e0e0e0;
+  }
+  
+  /* Responsive : ajustement pour les petits écrans */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+
+  .hero {
+    height: 80vh;
+    background: url('Risoul_Hautes-Alpes4.jpeg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Overlay pour améliorer la lisibilité */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .nav-links li {
+      margin: 10px 0;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+
+  .vitrine {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+  
+  .vitrine .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vitrine h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .activities {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .activity {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 45%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .activity:hover {
+    transform: translateY(-5px);
+  }
+  
+  .activity img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .activity h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #007BFF;
+  }
+  
+  .activity p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .nav-links li {
+      margin: 10px 0;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .activities {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .activity {
+      width: 90%;
+    }
+  }
+
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer-left p {
+    margin: 0;
+  }
+  
+  .footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-right a:hover {
+    color: #007BFF;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-right {
+      margin-top: 10px;
+    }
+    
+    .footer-right a {
+      margin: 0 10px;
+    }
+  }
