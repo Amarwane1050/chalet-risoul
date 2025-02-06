@@ -63,9 +63,15 @@
     }
   }
 
+  .logo img {
+    height: 50px; /* Ajustez cette valeur selon vos besoins */
+    width: auto;
+    display: block;
+  }
+
   .hero {
     height: 80vh;
-    background: url('Risoul_Hautes-Alpes4.jpeg') center center/cover no-repeat;
+    background: url('video.mp4') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,3 +284,11 @@
       margin: 0 10px;
     }
   }
+
+  /* Image du plan */
+.image-map {
+  width: 100%; /* Par défaut, prend toute la largeur disponible */
+  max-width: 1200px; /* Vous pouvez ajuster cette valeur pour une taille maximale */
+  display: block;
+  margin: 0 auto;
+}
